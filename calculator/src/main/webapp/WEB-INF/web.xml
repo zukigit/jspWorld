@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+<welcome-file-list>
+<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+
+<servlet>
+<servlet-name>add</servlet-name>
+<servlet-class>com.calculator.add</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>add</servlet-name>
+<url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>result</servlet-name>
+<servlet-class>com.calculator.result</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>result</servlet-name>
+<url-pattern>/resultPage</url-pattern>
+</servlet-mapping>
+
+</web-app>
